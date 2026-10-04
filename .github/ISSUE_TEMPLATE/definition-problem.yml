@@ -1,0 +1,46 @@
+name: Lua API definition issue
+description: Report incorrect editor types, missing completion or configuration problems.
+title: "[Definitions] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For billing, account or Android runtime issues, use https://macrohandler.com/support.
+        Keep public examples minimal and remove tokens and private account data.
+  - type: input
+    id: package_version
+    attributes:
+      label: Definition package version
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: Macro Handler app version and runtime backend
+    validations:
+      required: true
+  - type: input
+    id: editor_version
+    attributes:
+      label: VS Code and LuaLS versions
+  - type: input
+    id: api_symbol
+    attributes:
+      label: Affected API symbol
+      placeholder: "Region.find"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal example and reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual editor behavior
+    validations:
+      required: true

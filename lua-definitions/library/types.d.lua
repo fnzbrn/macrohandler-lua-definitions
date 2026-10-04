@@ -1,0 +1,343 @@
+---@meta
+-- Plain Lua payload fields and finite enums traced from actual producers.
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/PhaseGateLuaApi.kt:16
+---@alias MacroHandler.PhaseGateMode
+---| 'count'
+---| 'ms'
+---| 'seconds'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:82
+---@alias MacroHandler.FormFieldType
+---| 'text'
+---| 'spacer'
+---| 'input'
+---| 'checkbox'
+---| 'radio'
+---| 'select'
+---| 'multi'
+---| 'tags'
+---| 'signature'
+---| 'image'
+---| 'color'
+---| 'file'
+---| 'datetime'
+---| 'range'
+---| 'slider'
+---| 'recorder'
+---| 'navigation'
+---| 'agentDetect'
+---| 'row'
+---| 'section'
+---| 'tabs'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:125
+---@alias MacroHandler.SurfaceMode
+---| 'auto'
+---| 'portrait'
+---| 'landscape'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:128
+---@alias MacroHandler.SurfaceStyle
+---| 'sharp'
+---| 'rounded'
+---| 'oval'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:93
+---@alias MacroHandler.ControlStyle
+---| 'classic'
+---| 'neon_gaming'
+---| 'angular_gaming'
+---| 'command'
+---| 'glass'
+---| 'metal'
+---| 'luxury'
+---| 'minimal'
+---| 'soft'
+---| 'outline'
+---| 'faceted'
+---| 'chevron'
+---| 'circuit'
+---| 'luminous_fill'
+---| 'hollow_notch'
+---| 'pulse_core'
+---| 'tactical_frame'
+---| 'aurora'
+---| 'monolith'
+---| 'segmented_rail'
+---| 'cyber_grid'
+---| 'floating_card'
+---| 'beveled_notch'
+---| 'prismatic'
+---| 'obsidian_edge'
+---| 'holographic'
+---| 'royal_frame'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:110
+---@alias MacroHandler.ControlCoverage
+---| 'full_surface'
+---| 'indicator_only'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:111
+---@alias MacroHandler.IndicatorMark
+---| 'auto'
+---| 'check'
+---| 'fill'
+---| 'dot'
+---| 'glow'
+---| 'notch'
+---| 'diamond'
+---| 'cross'
+---| 'ring'
+---| 'spark'
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:normalizeEventName
+---@alias MacroHandler.WebSocketEventName
+---| 'open'
+---| 'message'
+---| 'close'
+---| 'error'
+
+--- Source: app/src/main/java/com/macrohandler/app/automation/imagemodes/ImageMatchMode.kt
+---@alias MacroHandler.ImageMode
+---| 'strict_image'
+---| 'quick_image'
+---| 'balanced_image'
+---| 'color_aware_image'
+---| 'precision_image'
+---| 'small_object_image'
+---| 'edge_image'
+---| 'feature_image'
+---| 'smart_reference'
+---| 'auto_image'
+---| 'gray_image'
+---| 'silhouette_image'
+---| 'orientation_image'
+---| 'pixel_exact_image'
+---| 'color_exact_image'
+---| 'rotation_image'
+---| 'sift_image'
+
+--- LuaJ inert handle: no methods are exposed for CompatDialog.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:wrapCompatValue
+---@class MacroHandler.DialogOpaque
+
+--- Plain coordinate input table, distinct from Point() wrappers whose x/y are methods.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/LuaScriptEngine.kt:830
+---@class MacroHandler.PointData
+---@field x number
+---@field y number
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:2015
+---@class MacroHandler.HSV
+---@field h number
+---@field s number
+---@field v number
+---@field alpha number
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:2029
+---@class MacroHandler.Lab
+---@field l number
+---@field a number
+---@field b number
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt:14
+---@class MacroHandler.PackedValues
+---@field n integer
+---@field [integer] any
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt:79
+---@class MacroHandler.WorkflowResult
+---@field ok boolean
+---@field reason string
+---@field attempts integer
+---@field elapsedMs number
+---@field value any
+---@field values MacroHandler.PackedValues
+---@field error any
+---@field cleanupError any
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt:30
+---@class MacroHandler.WorkflowPollOptions
+---@field timeoutMs? integer Default 30000; 1..86400000 ms.
+---@field maxAttempts? integer Default 10000; 1..1000000.
+---@field intervalMs? integer Default 100 milliseconds.
+---@field accept? fun(...: any): any
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt:30
+---@class MacroHandler.WorkflowRetryOptions
+---@field timeoutMs? integer
+---@field maxAttempts? integer Default 3.
+---@field delayMs? integer Default 100 milliseconds.
+---@field backoff? number Default 2; 1..100.
+---@field maxDelayMs? integer Default 5000 milliseconds.
+---@field jitter? number Default 0; 0..1.
+---@field accept? fun(...: any): any
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt:30
+---@class MacroHandler.WorkflowIterationOptions
+---@field timeoutMs? integer Default 30000 milliseconds.
+---@field intervalMs? integer Default 10 milliseconds.
+
+--- Opaque table identity; do not fabricate state fields.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/PhaseGateLuaApi.kt:51
+---@class MacroHandler.PhaseGateHandle
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/PhaseGateLuaApi.kt:9
+---@class MacroHandler.PhaseGateOptions
+---@field trueMode? MacroHandler.PhaseGateMode
+---@field falseMode? MacroHandler.PhaseGateMode
+---@field trueLimit? integer
+---@field falseLimit? integer
+---@field repeatCycle? boolean
+---@field startWithTrue? boolean
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/PhaseGateLuaApi.kt:73
+---@class MacroHandler.PhaseGateStatus
+---@field phase boolean|nil
+---@field visits integer
+---@field total integer
+---@field cycles integer
+---@field mode MacroHandler.PhaseGateMode|nil
+---@field limit integer|nil
+---@field elapsedMs number
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/agentmacro/AgentMacroLuaApi.kt:values
+---@class MacroHandler.AgentResult
+---@field ok boolean
+---@field outcome string
+---@field taps integer
+---@field detail string
+---@field kind string
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:80
+---@class MacroHandler.FormSchema
+---@field title? string
+---@field positive? string
+---@field negative? string
+---@field timeoutMs? integer
+---@field surface? MacroHandler.FormSurface
+---@field fields MacroHandler.FormField[]
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:123
+---@class MacroHandler.FormSurface
+---@field mode? MacroHandler.SurfaceMode
+---@field widthDp? integer
+---@field heightDp? integer
+---@field style? MacroHandler.SurfaceStyle
+
+--- Discriminated runtime schema: not every approved key is legal for every field type; Form.validate checks that.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:81
+---@class MacroHandler.FormField
+---@field type MacroHandler.FormFieldType
+---@field key? string
+---@field help? string
+---@field visibleWhen? table
+---@field required? boolean
+---@field pattern? string
+---@field style? MacroHandler.FormFieldStyle
+---@field value? any
+---@field label? string
+---@field lines? integer
+---@field hint? string
+---@field min? any
+---@field max? any
+---@field options? string[]
+---@field selected? integer
+---@field horizontal? boolean
+---@field format? string
+---@field fields? MacroHandler.FormField[]
+---@field pages? table[]
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt:92
+---@class MacroHandler.FormFieldStyle
+---@field labelColor? string
+---@field textColor? string
+---@field selectionColor? string
+---@field backgroundColor? string
+---@field borderColor? string
+---@field controlStyle? MacroHandler.ControlStyle
+---@field coverage? MacroHandler.ControlCoverage
+---@field indicatorStyle? string
+---@field indicatorMark? MacroHandler.IndicatorMark
+
+--- Managed profile table; internal mutable tracking fields intentionally omitted.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/VisualTargetLuaApi.kt:200
+---@class MacroHandler.VisualTargetProfile
+
+--- Geometry fields are absent before acquisition; do not assume coordinates without found.
+--- Source: app/src/main/java/com/macrohandler/app/runtime/VisualTargetLuaApi.kt:136
+---@class MacroHandler.VisualTargetSnapshot
+---@field found boolean
+---@field status string
+---@field x? number
+---@field y? number
+---@field w? number
+---@field h? number
+---@field centerX? number
+---@field centerY? number
+---@field score? number
+---@field viewIndex? integer
+---@field viewName? string
+---@field velocityX? number
+---@field velocityY? number
+---@field moving? boolean
+---@field lostFrames? integer
+---@field match? MacroHandler.Result
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/ApiCapabilitiesLuaApi.kt:54
+---@class MacroHandler.ApiCheck
+---@field ok boolean
+---@field missing string[]
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/compat/CompatMatchHosts.kt:screenMatchMetricsPayload
+---@class MacroHandler.MatchMetrics
+---@field w number
+---@field h number
+---@field left number
+---@field top number
+---@field right number
+---@field bottom number
+---@field pixels integer
+---@field scanned integer
+---@field coverage number
+---@field fill number
+---@field blobs integer
+---@field step integer
+---@field exact boolean
+---@field degraded boolean
+---@field direction_available? boolean
+---@field direction_confidence? number
+---@field direction_anchor_x? number
+---@field direction_anchor_y? number
+---@field empty? table
+
+--- Source: app/src/main/java/com/macrohandler/app/runtime/RegionSearchHelper.kt:1576
+---@class MacroHandler.SearchOptions
+---@field timeout? integer Milliseconds, default template timeout; 0 means immediate scan.
+---@field mScore? number 0..1 similarity; no invented percent unit.
+---@field scale? number 0.5..4.0.
+---@field sRate? integer 1..30.
+---@field step? integer 1..8.
+---@field target? string
+---@field aggregation? string
+---@field measureAggregation? string
+---@field method? MacroHandler.ImageMode|string
+---@field mode? string
+---@field whitelist? string
+---@field blacklist? string
+---@field case? string
+---@field segment? integer 0 WORD, 1 LINE, 2 PARA, 3 AUTO, 4 REGEX.
+---@field engine? string
+---@field ocrScript? string
+---@field ocrLang? string
+---@field lang? string
+---@field excludeRegion? any
+---@field exclude? any
+
+--- Dynamic user class, not a native MacroHandler object.
+--- Source: app/src/main/assets/lua/polyfills.lua:566
+---@class MacroHandler.LuaClass
+---@field new fun(...: any): table
+---@field init? function
+---@field [string] any

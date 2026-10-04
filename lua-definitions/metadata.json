@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "package": "MacroHandler Lua Definitions",
+  "definitionVersion": "0.1.0",
+  "applicationSourceVersion": "1.0.51",
+  "applicationSourceVersionCode": 65,
+  "sourceHead": "c98456b8a94f02491c392e36f12c7ec8d12b9b81",
+  "sourceKind": "working-tree snapshot; not a shipped APK attestation",
+  "luaDefault": "Lua 5.2",
+  "runtimeDefault": "LuaJ 3.0.1",
+  "experimentalNative": "Lua 5.4.8; host parity is not asserted",
+  "apiFingerprint": "eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa",
+  "sources": [
+    {
+      "path": "app/build.gradle.kts",
+      "sha256": "1df40ed1eceef9cb97f23c8ffde978d70967326c51b5b82f68173d6470c7ffb2"
+    },
+    {
+      "path": "app/src/main/assets/lua/polyfills.lua",
+      "sha256": "c1c0156dd5c2dd8a19220a4c9a050eb590a37d33ac7b273720fcaf614193c830"
+    },
+    {
+      "path": "app/src/main/cpp/CMakeLists.txt",
+      "sha256": "18b20ee632838edc783e8cdf9247247e3a402d2f7548adac63d486f2b919125d"
+    },
+    {
+      "path": "app/src/main/cpp/third_party/lua-5.4.8/src/lua.h",
+      "sha256": "3b77329f9deed929a5cbe7a7d5fc81ebbb63fd869a49e0a9302fe9240caf1930"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/automation/imagemodes/ImageMatchMode.kt",
+      "sha256": "58d6f08d607a6ab67efe4a43b62e546e329fbc5530b9b84fd44d6406d3a35aa2"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ApiCapabilitiesLuaApi.kt",
+      "sha256": "95914b1e5164f9939bee8573509710199942c053d2456435c8f99a57ee8a2493"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/CompatColor.kt",
+      "sha256": "306d073d92d6a7c44bbce5b3504bd83fc943d167d431e2d2669ac35496faa797"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/CompatOnScreenText.kt",
+      "sha256": "eddfdcbfbbe8fff549b013ca7c355f4191915faf4041499bc649af1dbd4a7542"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/CompatRegion.kt",
+      "sha256": "af45e4e7710f6475e7fe4986067ded8364de68a9742af371d97a8d7484693122"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/CompatSettingDialog.kt",
+      "sha256": "225207b164b71ea701691cd8818534570e4e9d109054b55ba19e0164a7e199e4"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ExecutionLifecycleManager.kt",
+      "sha256": "4687103173734bef998fd904e99168ae6da7a4a04b2bec1bfb3080f5d5b9cf7a"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/FormLuaApi.kt",
+      "sha256": "86ef2a4674e4974b4425e4fb76bf9bb2761a92a76e8f3fd8fafb901dbec51365"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/Lua54NativeHostSupportCatalog.kt",
+      "sha256": "b465429754f329cb561c03fc8c4bc560450a46aab2976595f7e90949cf712a45"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaApiRegistry.kt",
+      "sha256": "a34968fcf372a37eb86e1198c5e4109614780d2dab483c9531ec03af5ac4ae19"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaAsyncApi.kt",
+      "sha256": "9bdb3e915d9fe484a835f6aa99d5f1daa4dd696bb9633363e5858740f4932992"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaClickTargetDispatcher.kt",
+      "sha256": "ddeb64e22ea14f30697bdc815e32336720c545c8d07199e8d0813ff6dbfce473"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaCompatArgumentAdapter.kt",
+      "sha256": "fbddb83ee9d54e625e40e4211ba313cd690ed4d7d5f4dfdcf596dbec6a59fb21"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaEventBus.kt",
+      "sha256": "80a5e31bc687e16eff021635bfbd4235361c2ad7e0391cbffff9f13c5221fbbe"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaJColorApiSurface.kt",
+      "sha256": "2ed6959bf1e79c624c0beb4768c9b9bfc43d2539f991beb7e7144f8320cb625b"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaRuntimeEngineFactory.kt",
+      "sha256": "cc7db4aa98d514a11d6c61c2464795ab2ffb8113b3563e50825dfa5b8d383dbc"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaSandbox.kt",
+      "sha256": "1f0bf58c3e44c50ed9744f05c36f45e8d8e1d57a15d5c85b21fe51cbb2affb14"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaScriptEngine.kt",
+      "sha256": "b2cb25ff4e44992a6f6ef3288e3ccd57344140272d9930224f8ea4bc51cbb245"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaScriptPreprocessor.kt",
+      "sha256": "0ea90ec6a229fb73b2a87711d6f7a9ef647e4f01e2a24c6457fe7f1a05f3df74"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/LuaUtilityApis.kt",
+      "sha256": "7bac7547ee16713a29d2ea4bfbe13ab4fd56f67ad4aed86be2e5890911a27311"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ModuleLuaApi.kt",
+      "sha256": "5fe569b6afd8f0fce7dd163e4e45679760973c0b08cb5fa167ff19cb11a8a604"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/PhaseGateLuaApi.kt",
+      "sha256": "af6ffc343f15a3f56f128992b647f29d072fd7a16880ece9d0527174706454ce"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/RegionMatchStatePublisher.kt",
+      "sha256": "1791a787fe4ce7abfe91163241452637c976b9fdc3d5034d72feee3d0507fe47"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/RegionSearchHelper.kt",
+      "sha256": "8d7116d4444937868be5e3e10c39e4c656688cc43fad22a8b8de0d71a7fb1e7b"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/RegionTextReadHelper.kt",
+      "sha256": "b84b76e0d67bc011b1a05e9110f857d70b9857d292a820ec9bb4c408fa6010da"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/SandboxConfigurer.kt",
+      "sha256": "8d0ad1592b06cff1144946723e8a514ac1bfdd28a7761394c3a62c4014187299"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ScriptApiCatalog.kt",
+      "sha256": "692b213b68c54c1c5d2964adb89b306992a50dc4611b1b2119d7b94be251e157"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt",
+      "sha256": "71cb253d479fa6d2c0bde7d0ac1e0d084b02aa5cbd6c09cf587b486ec9b1047c"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/ScriptPolicyGuard.kt",
+      "sha256": "0aa61d709b1d8542d5ed2aba5a7b619574dcc635597f9b750ab894bbeec10512"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/VisualTargetLuaApi.kt",
+      "sha256": "0582e532b5de30bbbb287dc0720fb413c79c12d3a6a2ae0c041de398c93835e8"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/WorkflowLuaApi.kt",
+      "sha256": "c68260b1f27bb733b090ac5c9ae896765eea2fc4f339f8ee6739a38357b91430"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/agentmacro/AgentMacroLuaApi.kt",
+      "sha256": "88e0c00c671d35a4d7fe896ac7b712766eaf5f7e0e21b99a90fd2eae0f60b60b"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatAiHost.kt",
+      "sha256": "61e2b1f147900f875ed7826cb5d44ee38427af59f8d9b800355b31d08c8b319a"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatCacheHost.kt",
+      "sha256": "c9bea563388fc42fc352e1ee01e828db89a885d6938b34ea6a8173c1825b8bd5"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatConsoleHost.kt",
+      "sha256": "a778d86fe31d56eaa9237f5c40ab73dfe9dabff17ef2f3e4e544639b937af719"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatCryptoHosts.kt",
+      "sha256": "074afa44666c08dfb2d05765d2e5280f742172950868464cbd9fc88744271bff"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatDateTimeHosts.kt",
+      "sha256": "25123de21469d3cb40b10cb6df64125301de6521989c7ff8b6271091bf9b16df"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatDateTimeTypes.kt",
+      "sha256": "3e54e7752b9a1d4db1c9e024330506349b5d51f3c63f8ae26d325d06bdf00e1c"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatDialogFieldTypes.kt",
+      "sha256": "fa5d1a3d24301198ef3b2edae6227d6b13d2eca5861c422b3ce759b25a210839"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatEnvHost.kt",
+      "sha256": "981376a73f4def8aa85eb97a9b9c2888f8b42e04e8814bcd54743888bd284649"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatEventHost.kt",
+      "sha256": "cbe70bac7d16b3ee6cf046accf9bcc5bd048c6231e62e05d22073e1e878e1464"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatHumanizeHost.kt",
+      "sha256": "a7d264329598870961a0df11f00a945dc524e974807c7e5a32caf66f8ad47fc1"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatIoHosts.kt",
+      "sha256": "9f9fee8418b70d764c9466f52cac847cb2400971d80efb597759449585839ceb"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatLicenseHost.kt",
+      "sha256": "a4770e5d138917aa4c7ed7ece5f2e285d78107c196a0461b01297acd3acb44df"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatMatchHosts.kt",
+      "sha256": "c0e119a8582c06d1ff112d0be2e96cadd76348f0b60a110e17971e6fc5c8cbf1"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatMathHosts.kt",
+      "sha256": "007599dbab645c88938959afac1e9b460fd36cc1594ef4754e58d3822c1edad2"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatMultiSwipeHosts.kt",
+      "sha256": "853b16f3901ecae9d7944215f0a247b6bd85db102e735d1bebaa5152d08cd30e"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatOverlayHost.kt",
+      "sha256": "09620a6f0b9e0846463e96fd21aa12b5dafe88ed9aec4cd47761342f6fcc9c49"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatParamTypes.kt",
+      "sha256": "af4d44a0fe34984cc9941e8ee091440cce6e0d0374d94d05089c9c3e84ceb31c"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatRealtimeHosts.kt",
+      "sha256": "3005eec961509a3e99f3ffac5bf264ae67575d0ebae020d3b4487c9c7db9b293"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatRecordHost.kt",
+      "sha256": "8a5a17787dfd10bd95ff1468bd4a664ab8581f30008fab7249831c9ff844c07b"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatRequestHosts.kt",
+      "sha256": "5feabd0611163b33969b0f77aae3479b61322d4edf3152fb853a49cc56318f83"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatScreenCaptureHost.kt",
+      "sha256": "8f6e9b4efb9bc2b1e62dc66a32d975450d1f9c4d49a3fb371c867b833e544c2e"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatSearchParam.kt",
+      "sha256": "05cd4a4c5ef5e71983bb24a1a5adea75bbaf095650f933ee78762e2c1b0d321c"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatSettingHosts.kt",
+      "sha256": "1ca571b1f204b6f57169f519ce9f394cb2c80e9c23918f70f82243f0600d76c8"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatStringAndMapHosts.kt",
+      "sha256": "ee5a4eb4fc2def406e66d07b4775dc5ca540f27d72363a04751c093e5306e6ce"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatSysHost.kt",
+      "sha256": "21f5727eac6c6f3aa397f70494a6271fb73d77a9df6224fc65b4a4dd506ea0aa"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatTemplateHosts.kt",
+      "sha256": "8306ccecc6392739f72fc7e3f641fbb3ad186adc6b41974d9e81281e21a91cbf"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatToastParamsHost.kt",
+      "sha256": "419887045e39fd39b11f341afb2010072df466f2990b3246322cb1bb4c8da748"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatTouchHost.kt",
+      "sha256": "ffafef8c6137afb2fe5dc1fe66b39840d20d785fe4f2e46208de1a7882ea1781"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatTuneHost.kt",
+      "sha256": "0e6742599e4eb7aebe89fe8fe30d156db6a19d17b2302437eb196f5850473163"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatUiNodeHost.kt",
+      "sha256": "02aeb6145d0ece3ca294a18828bb04ad93e52a15daa617e30b988591a695d90a"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/CompatVersionHost.kt",
+      "sha256": "aebb04fe21d9978edba5c9d9dd1405caec550f088becb816a9f2d6cad85c6f36"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/compat/LuaCompatPointParser.kt",
+      "sha256": "a579f009b5bdfedfc34fa17d45697ff2d7d78e312586db2a2005daf5c1473fa7"
+    },
+    {
+      "path": "app/src/main/java/com/macrohandler/app/runtime/navigation/NavigationLuaApi.kt",
+      "sha256": "d5ce5dec6d6348e8fcaddb6afe20bef43b08985bac85f9ef5878ac1b3e054eaa"
+    },
+    {
+      "path": "docs/lua_api_alias_policy.md",
+      "sha256": "71581e949bc9a88201cef02ca2bd73815cbcd1deb74aa753daf0e42d0db533cb"
+    }
+  ],
+  "sourceSnapshotUtc": "2026-10-04T17:50:43.779731+00:00",
+  "definitionFormat": "LuaLS LuaCATS annotations; IDE only",
+  "independentSemanticApiVersion": "Not found; compatibility is identified by source version and source fingerprint.",
+  "validatedLanguageServer": "LuaLS 3.19.1",
+  "dependencyInterfaceSources": [
+    "https://github.com/luaj/luaj/blob/v3.0.1/src/core/org/luaj/vm2/lib/BaseLib.java",
+    "https://github.com/luaj/luaj/blob/v3.0.1/src/core/org/luaj/vm2/lib/StringLib.java",
+    "https://github.com/luaj/luaj/blob/v3.0.1/src/core/org/luaj/vm2/lib/TableLib.java",
+    "https://github.com/luaj/luaj/blob/v3.0.1/src/core/org/luaj/vm2/lib/OsLib.java",
+    "https://github.com/luaj/luaj/blob/v3.0.1/src/core/org/luaj/vm2/lib/CoroutineLib.java"
+  ],
+  "distributionRepository": "https://github.com/fnzbrn/macrohandler-lua-definitions",
+  "website": "https://macrohandler.com",
+  "googlePlay": "https://play.google.com/store/apps/details?id=com.macrohandler.app",
+  "documentationLanguage": "English"
+}

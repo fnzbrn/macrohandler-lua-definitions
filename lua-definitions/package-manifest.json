@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".luarc.json",
+      "sha256": "2229f2b57c13e8659d8c91fb35b3b1e41c45ebdffa8287f4ee7887f3d6423e6e"
+    },
+    {
+      "path": "api-inventory.json",
+      "sha256": "5ca6b773a25ac99518794b66274cda7f25796d016eb41f9d9463842e147f97f2"
+    },
+    {
+      "path": "config/workspace.luarc.json",
+      "sha256": "3e406043690bcb243933e955e7001f17d0670f181f3caa21f0f4aecc7b56311c"
+    },
+    {
+      "path": "docs/LUA_API_DEFINITION_AUDIT.md",
+      "sha256": "dd1708d0e909708d1fa5555278c774e0a7a0c69064b42afeec96bfd7b47a0373"
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "sha256": "2a54c226ff3de9cdd88507180378db782aeb073cdaa120fcc8072adb21ea5a08"
+    },
+    {
+      "path": "examples/vscode-example.lua",
+      "sha256": "ac0b0f04894448503e5bfbd4512c2644f239a7b81dd06a29dd3c6d83d01753ed"
+    },
+    {
+      "path": "library/globals.d.lua",
+      "sha256": "9a64ac5df3cee0d9561ef6ef17707eec1326d568bf063027bcae97eaa298af79"
+    },
+    {
+      "path": "library/namespaces.d.lua",
+      "sha256": "0ff78019d7d1df7178d59a7843f011a3ecb084167b6b02a81d6d44f1d1fee2ae"
+    },
+    {
+      "path": "library/objects.d.lua",
+      "sha256": "cbdbf8714f86efc992b93ab667873ec872f3720ac7637650b5a53ac68dcf85d9"
+    },
+    {
+      "path": "library/polyfills.d.lua",
+      "sha256": "9889cfd0e8153c19e909da31b4c8485145a7205b26e520eec6ef02a13e7dbf9d"
+    },
+    {
+      "path": "library/sandbox.d.lua",
+      "sha256": "21b99aab99e565a77788f89ed62ecc1ade5b377d9da6679536ad4a063fe3bb68"
+    },
+    {
+      "path": "library/standard-library.d.lua",
+      "sha256": "1ef898fc9b16bacdbccb352531103478f2dcc7993ff37917525b1d7de83d7840"
+    },
+    {
+      "path": "library/types.d.lua",
+      "sha256": "ecef8385e2adeb370a9a82aef096ba135eb016fd162342ad9dfe98e70ce68e0f"
+    },
+    {
+      "path": "metadata.json",
+      "sha256": "69831c66c7c7e60bf1611c034402f2348339a312d7476a82f147055ce7be4c63"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "3a9ca533da3d850af85f48d67619d45f7bb805af7e200a191a5f131d1c27f4c9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "afa5c131c96cb632f166613df7f6d6248dd0ebc283ceb1c1e27568b45683b08d"
+    },
+    {
+      "path": "tools/check-luals.py",
+      "sha256": "f0b65abe671d473094c7bc9e3e6278b6decdc9ffbdec9cc413f6676cff6a09a8"
+    },
+    {
+      "path": "tools/verify-lua-definitions.py",
+      "sha256": "db3b5ad20f48002f27a9685a8be7873dec7090fdfae2c49d1251abae6a030358"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "fc03e46378d9be55bce72f2820fc9cc3eac6a6e8771a1ebefb6c9a2f31277325"
+    }
+  ]
+}

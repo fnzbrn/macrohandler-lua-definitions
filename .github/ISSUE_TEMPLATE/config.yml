@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Macro Handler product support
+    url: https://macrohandler.com/support
+    about: Android runtime, billing and account support.
+  - name: Macro Handler API documentation
+    url: https://macrohandler.com/docs
+    about: Official scripting documentation and examples.

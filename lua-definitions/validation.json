@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "completedUtc": "2026-10-04T19:00:39.764932+00:00",
+  "scope": "IDE artifacts and read-only source comparison; no Lua/device execution, VS Code GUI, Android build, Git mutation or deployment",
+  "apiFingerprint": "eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa",
+  "languageServer": {
+    "tag": "3.19.1",
+    "url": "https://github.com/LuaLS/lua-language-server/releases/download/3.19.1/lua-language-server-3.19.1-win32-x64.zip",
+    "sha256": "fdb9a59108cf62517813c97fa5549b0e16d1ef0688306bac728b08434db7e4cd",
+    "size": 4453980
+  },
+  "checks": [
+    {
+      "name": "source_snapshot",
+      "passed": true,
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": true,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 0\n}\n"
+    },
+    {
+      "name": "current_source_checkout",
+      "passed": true,
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": true,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 0\n}\n"
+    },
+    {
+      "name": "standalone_package",
+      "passed": true,
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "output": "Source checkout not supplied: binding drift NOT checked.\n{\n  \"status\": \"PASS\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": false,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 0\n}\n"
+    },
+    {
+      "name": "lualls_cli",
+      "passed": true,
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "output": "Initializing ...\n                                                                                \n>>>================= 1/8\n                                                                                \n>>>>>>>>>>========== 4/8\n                                                                                \n>>>>>>>>>>>>>>>>>>>> 8/8\n                                                                                \nDiagnosis completed, no problems found\n"
+    },
+    {
+      "name": "lualls_lsp",
+      "passed": true,
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "output": "{\"system_members\": true, \"point_members\": true, \"region_members\": true, \"match_members\": true, \"enum_values\": true, \"form_fields\": true, \"ocr_members\": true, \"response_members\": true, \"websocket_members\": true, \"hover\": true, \"signature\": true, \"return_type\": true, \"sandbox_nil\": true, \"getmetatable_nil\": true, \"setmetatable_nil\": true, \"ocr_shape\": true, \"negative\": true}\n"
+    },
+    {
+      "name": "missing_declaration",
+      "passed": true,
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "output": "Source checkout not supplied: binding drift NOT checked.\nFAIL: Inventory has no declaration: wait\n{\n  \"status\": \"FAIL\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": false,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 1\n}\n"
+    },
+    {
+      "name": "invented_declaration",
+      "passed": true,
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "output": "Source checkout not supplied: binding drift NOT checked.\nFAIL: Unlisted stub declaration: function InventedMacroHandlerFixtureApi(\n{\n  \"status\": \"FAIL\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": false,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 1\n}\n"
+    },
+    {
+      "name": "corrupted_package_file",
+      "passed": true,
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "output": "Source checkout not supplied: binding drift NOT checked.\nFAIL: Package file missing or modified: library/globals.d.lua\n{\n  \"status\": \"FAIL\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": false,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 1\n}\n"
+    },
+    {
+      "name": "changed_binding_source",
+      "passed": true,
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "output": "FAIL: Source snapshot drift: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt\n{\n  \"status\": \"FAIL\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": true,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 1\n}\n"
+    },
+    {
+      "name": "new_runtime_global",
+      "passed": true,
+      "exitCode": 1,
+      "expectedExitCode": 1,
+      "output": "FAIL: Runtime catalog drift: supportedGlobalFunctions\nFAIL: Source snapshot drift: app/src/main/java/com/macrohandler/app/runtime/ScriptApiCatalog.kt\n{\n  \"status\": \"FAIL\",\n  \"declarationSymbols\": 1189,\n  \"globalTables\": 60,\n  \"catalogMethods\": 814,\n  \"sourceChecked\": true,\n  \"apiFingerprint\": \"eb3538a5cb1b012e84711cc9ba7bc29844b10b05cd00b9e911f15555a1b5feaa\",\n  \"errors\": 2\n}\n"
+    },
+    {
+      "name": "annotation_references_and_no_embedded_private_key",
+      "passed": true,
+      "definedClassesAndAliases": 139
+    }
+  ],
+  "lspChecks": {
+    "system_members": {
+      "labels": [
+        "getScreenWidth()",
+        "getScreenWidth(self)",
+        "getWidth()",
+        "getWidth(self)",
+        "screenWidth()",
+        "screenWidth(self)",
+        "width()",
+        "width(self)"
+      ],
+      "expected": [
+        "width"
+      ],
+      "passed": true
+    },
+    "point_members": {
+      "labels": [
+        "getX()",
+        "getY()"
+      ],
+      "expected": [
+        "getX",
+        "getY"
+      ],
+      "passed": true
+    },
+    "region_members": {
+      "labels": [
+        "find(templateOrBuilder, param)",
+        "findAll(templates, param)",
+        "findAllText(texts, param)",
+        "findAny(templates, param)",
+        "findAnyText(texts, param)",
+        "findColorBlobs(color, options)",
+        "findMulti(templateOrBuilder, param)",
+        "findMultiText(textOrTemplate, param)",
+        "findMultiVisualIdentity(macroScopeId, profileId, options)",
+        "findText(textOrTemplate, param)",
+        "find(param)",
+        "findAll(param)",
+        "findAllText(param)",
+        "findAny(param)",
+        "findAnyText(param)",
+        "findColorBlobs(options)",
+        "findMulti(param)",
+        "findMultiText(param)",
+        "findMultiVisualIdentity(profileId, options)",
+        "findText(param)"
+      ],
+      "expected": [
+        "find",
+        "findText"
+      ],
+      "passed": true
+    },
+    "match_members": {
+      "labels": [
+        "getMetrics()",
+        "getAngle()",
+        "getEngine()",
+        "getH()",
+        "getPoint()",
+        "getScore()",
+        "getText()",
+        "getW()",
+        "getX()",
+        "getY()"
+      ],
+      "expected": [
+        "getPoint",
+        "getScore"
+      ],
+      "passed": true
+    },
+    "enum_values": {
+      "labels": [
+        "\"strict_image\"",
+        "\"quick_image\"",
+        "\"balanced_image\"",
+        "\"color_aware_image\"",
+        "\"precision_image\"",
+        "\"small_object_image\"",
+        "\"edge_image\"",
+        "\"feature_image\"",
+        "\"smart_reference\"",
+        "\"auto_image\"",
+        "\"gray_image\"",
+        "\"silhouette_image\"",
+        "\"orientation_image\"",
+        "\"pixel_exact_image\"",
+        "\"color_exact_image\"",
+        "\"rotation_image\"",
+        "\"sift_image\""
+      ],
+      "expected": [
+        "balanced_image",
+        "rotation_image"
+      ],
+      "passed": true
+    },
+    "form_fields": {
+      "labels": [
+        "timeoutMs?",
+        "title?"
+      ],
+      "expected": [
+        "title"
+      ],
+      "passed": true
+    },
+    "ocr_members": {
+      "labels": [
+        "getPoint()",
+        "getText()"
+      ],
+      "expected": [
+        "getPoint",
+        "getText"
+      ],
+      "passed": true
+    },
+    "response_members": {
+      "labels": [
+        "getData()",
+        "getResponseCode()"
+      ],
+      "expected": [
+        "getResponseCode",
+        "getData"
+      ],
+      "passed": true
+    },
+    "websocket_members": {
+      "labels": [
+        "send(message)",
+        "send()"
+      ],
+      "expected": [
+        "send"
+      ],
+      "passed": true
+    },
+    "hover": {
+      "result": {
+        "contents": {
+          "kind": "markdown",
+          "value": "```lua\nfunction wait(milliseconds?: number)\n  -> result1: nil\n```\n\n---\n\n Wait in milliseconds with runtime stop checks.\n Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:310\n\n@*param* `milliseconds` \u2014 Default 0; negative values clamp to 0."
+        },
+        "maxLevel": 0,
+        "range": {
+          "end": {
+            "character": 4,
+            "line": 0
+          },
+          "start": {
+            "character": 0,
+            "line": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    "signature": {
+      "result": {
+        "signatures": [
+          {
+            "activeParameter": 0,
+            "documentation": {
+              "kind": "markdown",
+              "value": " Wait in milliseconds with runtime stop checks.\n Source: app/src/main/java/com/macrohandler/app/runtime/ScriptApiInstaller.kt:310\n\n@*param* `milliseconds` \u2014 Default 0; negative values clamp to 0."
+            },
+            "label": "function wait(milliseconds?: number)",
+            "parameters": [
+              {
+                "label": [
+                  14,
+                  35
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "passed": true
+    },
+    "return_type": {
+      "result": {
+        "contents": {
+          "kind": "markdown",
+          "value": "```lua\n(method) MacroHandler.Response:getData()\n  -> result1: string\n```\n\n---\n\n Source: app/src/main/java/com/macrohandler/app/runtime/compat/CompatRequestHosts.kt:28"
+        },
+        "maxLevel": 0,
+        "range": {
+          "end": {
+            "character": 16,
+            "line": 1
+          },
+          "start": {
+            "character": 9,
+            "line": 1
+          }
+        }
+      },
+      "passed": true
+    },
+    "sandbox_nil": {
+      "result": {
+        "contents": {
+          "kind": "markdown",
+          "value": "```lua\n(global) load: nil\n```\n\n---\n\n Unavailable in the MacroHandler sandbox."
+        },
+        "maxLevel": 0,
+        "range": {
+          "end": {
+            "character": 4,
+            "line": 0
+          },
+          "start": {
+            "character": 0,
+            "line": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    "getmetatable_nil": {
+      "result": {
+        "contents": {
+          "kind": "markdown",
+          "value": "```lua\n(global) getmetatable: nil\n```\n\n---\n\n Removed after trusted polyfills are loaded; unavailable to user scripts."
+        },
+        "maxLevel": 0,
+        "range": {
+          "end": {
+            "character": 12,
+            "line": 0
+          },
+          "start": {
+            "character": 0,
+            "line": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    "setmetatable_nil": {
+      "result": {
+        "contents": {
+          "kind": "markdown",
+          "value": "```lua\n(global) setmetatable: nil\n```\n\n---\n\n Removed after trusted polyfills are loaded; unavailable to user scripts."
+        },
+        "maxLevel": 0,
+        "range": {
+          "end": {
+            "character": 12,
+            "line": 0
+          },
+          "start": {
+            "character": 0,
+            "line": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    "ocr_shape": {
+      "passed": true,
+      "excluded": "getScore (not exposed on CompatMatchText)"
+    },
+    "negative": {
+      "diagnostics": [
+        {
+          "code": "undefined-global",
+          "message": "Undefined global `DefinitelyMissingMacroHandlerApi`.",
+          "range": {
+            "end": {
+              "character": 32,
+              "line": 1
+            },
+            "start": {
+              "character": 0,
+              "line": 1
+            }
+          },
+          "severity": 2,
+          "source": "Lua Diagnostics."
+        },
+        {
+          "code": "param-type-mismatch",
+          "message": "Cannot assign `string` to parameter `number?`.\n- `string` cannot match `number?`\n- Type `string` cannot match `nil`\n- Type `string` cannot match `number`",
+          "range": {
+            "end": {
+              "character": 19,
+              "line": 0
+            },
+            "start": {
+              "character": 5,
+              "line": 0
+            }
+          },
+          "severity": 2,
+          "source": "Lua Diagnostics."
+        }
+      ],
+      "passed": true
+    }
+  },
+  "lspPassed": 17,
+  "lspTotal": 17,
+  "limitations": [
+    "Actual VS Code GUI not exercised",
+    "No app/APK/Play release runtime attestation",
+    "Experimental native-host parity not asserted",
+    "Dynamic payload TODOs remain conservative"
+  ]
+}
